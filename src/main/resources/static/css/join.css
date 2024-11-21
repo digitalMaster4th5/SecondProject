@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.ttf') format('truetype');
+}
+
+.body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+
+    text-align: center;
+}
+
+
+.background {
+    position: relative;
+    width: 1500px;
+    height: 740px;
+    
+    padding: 0;
+    margin: 0 auto;
+    /* 중앙 정렬 */
+}
+
+.container {
+    position: relative;
+    width: 1500px;
+    height: 740px;
+
+    padding: 0;
+    background: #5D7ED3;
+    text-align: center;
+
+    margin: 0 auto;
+    /* 중앙 정렬 */
+}
+
+.temp {
+    width: 1500px;
+    height: 740px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wave {
+    width: 100%;
+    height: 740px;
+}
+
+.innerbackground {
+    position: relative;
+    top: -630px;
+    left: 250px;
+    width: 939px;
+    height: 574px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+}
+
+.left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 334px;
+    height: 574px;
+    border-radius: 25px 0px 0px 25px;
+    background: #22335F;
+}
+
+img.logo {
+    width: 250px;
+    height: 250px;
+}
+
+.top-joinbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 251px;
+    height: 103px;
+    z-index: 2;
+}
+
+.top-joinbox .top-join {
+    position: relative;
+    width: 253px;
+    height: 103px;
+    top: 0;
+    left: 0;
+}
+
+.top-joinbox .overlap-group {
+    position: relative;
+    width: 251px;
+    height: 103px;
+    background-color: #3d86ce;
+    border-radius: 0px 21px 5px 100px;
+}
+
+.top-joinbox .top-join-text {
+    position: absolute;
+    width: 188px;
+    height: 50px;
+    top: 19px;
+    left: 43px;
+    font-family: "KoddiUD OnGothic-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+#joinForm {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 532px;
+    height: 511px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 3px 7.7px 0.5px rgba(0, 0, 0, 0.13);
+}
+
+.joinlist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.namebox {
+    width: 171.96px;
+    height: 49px;
+    flex-shrink: 0;
+}
+
+.label {
+    width: 400px;
+    height: 20px;
+    color: #808080;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "KoddiUD OnGothic";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 3px;
+
+    display: flex;
+}
+
+.infotip {
+    margin-left: 20px;
+    text-align: right;
+}
+
+.namebox>.username {
+    width: 171.96px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: #FFFEFE;
+}
+
+.idbox {
+    display: block;
+    width: 100%;
+    height: 46px;
+    flex-shrink: 0;
+}
+
+
+.idbox_inline {
+    display: flex;
+    /* input과 버튼만 가로 정렬 */
+    gap: 10px;
+    /* input 필드와 버튼 사이 간격 */
+    align-items: center;
+    /* 수직 정렬 */
+}
+
+.userId {
+    width: 212.263px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: #FFFEFE;
+}
+
+.idCheck {
+    width: 80px;
+    height: 29px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: #3E87CE;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+
+    /* 폰트 스타일 */
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "KoddiUD OnGothic";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding: 0;
+    /* 텍스트 중심 정렬을 위해 여백 제거 */
+}
+
+.pwdbox {
+    width: 300.929px;
+    height: 46px;
+    flex-shrink: 0;
+}
+
+
+.userPwd,
+.pwdCheckBox {
+    width: 300.929px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: #FFFEFE;
+}
+
+
+.pwdCheck {
+    width: 300.929px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: #FFFEFE;
+}
+
+.phone {
+    width: 300.929px;
+    height: 47px;
+    flex-shrink: 0;
+}
+
+.phonenum {
+    width: 300.929px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: #FFFEFE;
+}
+
+
+.emailinline {
+    display: flex;
+    align-items: center;
+}
+
+.emailinline input {
+    box-sizing: border-box;
+}
+
+.emailF {
+    width: 130px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: #FFFEFE;
+}
+
+.at {
+    width: 45.677px;
+    color: #808080;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "KoddiUD OnGothic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#emailchoose {
+    width: 130px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: #FFFEFE;
+    margin: 0 15px 0 0;
+}
+
+.email1 {
+    width: 130px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    background: #FFFEFE;
+}
+
+.typeSelect {
+    display: flex;
+    color: black;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "KoddiUD OnGothic";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    justify-content: center;
+    margin: 3px;
+}
+
+.typeSelect input {
+    margin: 0 4px 0 15px;
+}
+
+.bottom-box {
+    position: absolute;
+    top: 490px;
+    right: 59px;
+    width: 478.263px;
+    height: 41.182px;
+    flex-shrink: 0;
+}
+
+.bottom-join {
+    width: 478.263px;
+    height: 41.182px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: #3E87CE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitBtn {
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background: transparent;
+    text-align: center;
+    font-family: "KoddiUD OnGothic";
+    font-size: 21px;
+    font-weight: 800;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}

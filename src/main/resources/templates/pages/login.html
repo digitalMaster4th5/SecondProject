@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" th:href="@{/images/favicon.png}">
+    <title>로그인</title>
+    <!-- <link rel="stylesheet" th:href="@{/css/login.css}"> -->
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <script defer th:src="@{/script/jquery-3.7.1.min.js}"></script>
+
+</head>
+
+<body class="body">
+    <div class="header" th:replace="~{fragment/header(title='헤더')}"></div>
+    <div class="background">
+        <div class="container">
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/81fd96ec32b73da6bb0e0aa31222124c3e85533cefc6d6084390d5d587750cf8?placeholderIfAbsent=true&apiKey=e2e98420831a4c5e9ded685bb9a9a66b"
+                class="wave" alt="물결 배경">
+        </div>
+        <div class="loginbox">
+            <div class="left-box">
+                <img th:src="@{/images/login_logo.png}" class="logo" alt="로고">
+            </div>
+            <div class="top-loginbox">
+                <div class="top-login">
+                    <div class="overlap-group"><span class="top-login-text">로그인</span></div>
+                </div>
+            </div>
+            <div class="content">
+                <form th:action="@{/user/loginProc}" method="POST">
+                    <div class="id-box">
+                        <!--  -->
+                        <img th:src="@{/images/user.png}" class="user" alt="아이디">
+                        <input type="text" name="id" id="id" placeholder="아이디">
+                    </div>
+                    <div class="pwd-box">
+                        <!--  -->
+                        <img th:src="@{/images/password.png}" class="password" alt="비밀번호">
+                        <input type="password" name="pwd" id="pwd" placeholder="비밀번호">
+                    </div>
+
+                    <div class="bottom-box">
+                        <input type="submit" id="submitBtn" value="로그인">
+                    </div>
+                </form>
+                <div class="btm-text-box">
+                    <p class="notyet">아직 회원이 아니신가요?</p>
+                    <button class="join-btn">
+                        <span class="join"><a th:href="@{/user/join}">회원 가입</a></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.ttf') format('truetype');
+}
+
+.body {
+    width: 100%;
+    background-color: white;
+
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.header {
+    width: 1500px;
+    height: 100px;
+
+    position: relative;
+
+    padding-top: 0;
+    margin: 0 auto;
+    /* 중앙 정렬 */
+    background-color: white;
+
+    padding-top: 20px;
+
+    font-family: 'KoddiUD OnGothic', sans-serif;
+    font-weight: 800;
+    text-align: center;
+
+
+}
+
+.all_con {
+
+    position: relative;
+    width: 1400px;
+
+    height: 86px;
+    margin: 0 auto;
+    /* 중앙 정렬 */
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    font-family: 'KoddiUD OnGothic', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+img#logoHeader.logoHeader {
+    aspect-ratio: 5.24;
+    object-fit: contain;
+    object-position: center;
+    width: 262px;
+    height: 50px;
+    margin: auto 0;
+}
+
+.nav-menu {
+    display: flex;
+    width: 800px;
+    align-items: center;
+    gap: 20px;
+    font-size: 26px;
+    color: #344c64;
+    justify-content: space-around;
+}
+
+
+.nav-item {
+    margin: auto 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #344c64;
+    width: 100%;
+}
+
+.nav-item-tall {
+    width: 135px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+
+#user-ul {
+    /*머리그림 제거*/
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.log-button {
+    background: #344C64;
+    border-radius: 30px;
+    width: 110px;
+    height: 54px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.logout-btn {
+    color: #344C64;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: 'KoddiUD OnGothic', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.log-button:active,
+.logout-btn:active {
+
+    background: #5a5a5a;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: auto 0;
+
+    color: #344c64;
+    font-size: 26px;
+}
+
+
+.user-icon {
+    width: 30px;
+}
+
+.user-suffix {
+    color: black;
+}
