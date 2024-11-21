@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.ttf') format('truetype');
+}
+
+.body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 800;
+    color: black;
+}
+
+.allTag {
+
+    width: 1500px;
+    height: 560px;
+    margin: 0 auto;
+    /* 중앙 정렬 */
+}
+
+div#map {
+    position: relative;
+    width: 1500px;
+    height: 560px;
+    left: 0px;
+    background: #6f6f6f;
+}
+
+/* 지도 좌측 상단 팝업 */
+#shipPerInfo {
+    position: relative;
+    width: 500px;
+    height: 365px;
+    left: 10px;
+    top: -550px;
+
+    border-radius: 15px;
+    text-align:left;
+    
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 700;
+    font-size: 23px;
+    /* identical to box height */
+    color: red;
+}
+
+
+/* 지도 우측 하단 팝업 */
+.box {
+    position: relative;
+    ;
+    width: 345px;
+    height: 365px;
+    left: 1150px;
+    top: -750px;
+
+    background: rgba(14, 14, 14, 0.6);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.overlap-group {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+}
+
+
+.shipInfo {
+    width: 100%;
+    height: 75px;
+    text-align: left;
+}
+
+
+
+
+/* 선박명 */
+.shipName {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 700;
+    font-size: 23px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+    padding: 10px 0 0 15px;
+}
+
+/* Call Sign */
+.callSign {
+    height: 26px;
+
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 700;
+    font-size: 21px;
+
+    color: #CDC7C7;
+    padding: 5px 0 0 15px;
+}
+
+
+.Line1 {
+    width: 317px;
+    border: 1.5px solid #B1AEAE;
+    margin-bottom: 20px;
+    margin: 5px 0 0 15px;
+}
+
+.dateInfo {
+    padding-top: 10px;
+    width: 100%;
+    height: 28px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 출발일시 도착일시 */
+.Day {
+    font-family: 'KoddiUD OnGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+
+.d-day {
+    font-family: 'KoddiUD OnGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+
+/* 출발-도착 */
+.DepToArr {
+    width: 100%;
+
+    margin-top: 30px;
+    height: 60px;
+
+    font-family: 'KoddiUD OnGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+
+/* 운행률 */
+.proceeding {
+    width: 100%;
+    height: 35px;
+    font-family: 'KoddiUD OnGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+
+#perInfo{
+	font-size: 18px;
+    font-weight: 400;
+}
+
+
+#voyagePer {
+    width: 66px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 29px;
+}
+
+.arrDay {
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+
+
+
+
+/* 지도 위 좌표 팝업 */
+.gm-style-iw .gm-style-iw-c {
+    text-align: center;
+}
+
+.gm-style-iw-chr {
+    height: 30px;
+}
+
+.overTheMap {
+    width: 600px;
+    height: 100px;
+}
+
+.over1,
+.over2 {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+
+    font-family: 'KoddiUD OnGothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#weatherIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.minsize {
+    font-size: 16px;
+}
+
+
+/* Line 2 */
+.Line2 {
+    width: 20px;
+    height: 0px;
+
+    border: 1.5px solid #B1AEAE;
+    transform: rotate(90deg);
+
+}

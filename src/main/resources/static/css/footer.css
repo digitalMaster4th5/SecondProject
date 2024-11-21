@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KoddiUD OnGothic';
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.otf') format('opentype'),
+        url('https://cdn.jsdelivr.net/gh/fonts-archive/KoddiUDOnGothic/KoddiUDOnGothic-ExtraBold.ttf') format('truetype');
+}
+
+.body {
+    width: 100%;
+}
+
+.footerFake {
+    width: 100%;
+
+    background-color: rgba(76, 77, 88);
+}
+
+.footer {
+    overflow: hidden;
+    width: 1500px;
+    height: 150px;
+
+    position: relative;
+
+    margin: 0 auto;
+    /* 중앙 정렬 */
+
+    background-color: rgba(76, 77, 88);
+    padding: 0px;
+
+    font-family: 'KoddiUD OnGothic', sans-serif;
+    font-weight: 800;
+}
+
+
+.footer-menu {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    padding-right: 10px;
+}
+
+.social-icons {
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+
+.copyright {
+    color: #fff;
+    text-align: right;
+    font: 800 14px/1.4 'KoddiUD OnGothic', sans-serif;
+
+    margin-right: 20px;
+}
